@@ -24,6 +24,7 @@ export default {
 .tabBar {
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
     div {
         background: red;
     }

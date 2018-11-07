@@ -1,6 +1,6 @@
 <template>
     <div class="hello">
-        <div class="box">红烧豆腐</div>
+        <div class="box animated bounceInDown"></div>
     </div>
 </template>
 
