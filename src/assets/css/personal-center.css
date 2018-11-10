@@ -1,0 +1,51 @@
+.head_fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background: linear-gradient(to left, blue, purple);
+  color: plum;
+  position: relative;
+}
+.head_fixed span:nth-child(2) {
+  position: absolute;
+  right: 20px;
+}
+.personal_center_head .head_message {
+  position: relative;
+  background: linear-gradient(to left, blue, purple);
+}
+.personal_center_head .head_message .head_personal_details {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personal_center_head .head_message .head_personal_details img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.personal_center_head .head_message .head_personal_details span {
+  display: block;
+  margin-top: 20px;
+  color: plum;
+  opacity: 0.6;
+}
+.personal_center_head .head_message .head_setting {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.personal_center_head .head_message .head_tabbar {
+  display: flex;
+  justify-content: space-around;
+}
+.personal_center_head .head_message .head_tabbar .tabbar_flex {
+  display: flex;
+  flex-direction: column;
+  color: plum;
+  opacity: 0.6;
+}
