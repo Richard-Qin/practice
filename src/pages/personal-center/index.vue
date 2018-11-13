@@ -2,7 +2,7 @@
     <div class="personal_center">
         <div class="head_fixed" v-show="!isShow" :style="opacityStyle">
             <span>芝麻凛</span>
-            <span>设置</span>
+            <span @click="jumpSet()">设置</span>
         </div>
         <div class="personal_center_head">
             <div class="head_message">
@@ -28,7 +28,7 @@
                         <span>0</span>
                     </div>
                 </div>
-                <svg class="icon head_setting" aria-hidden="true">
+                <svg class="icon head_setting" aria-hidden="true" @click="jumpSet()">
                     <use xlink:href="#icon-shezhi"></use>
                 </svg>
             </div>
@@ -46,6 +46,7 @@
 
 <script>
 import iconLibrary from '@/components/icon-library'
+// import func from './vue-temp/vue-editor-bridge';
 export default {
     components: {
         iconLibrary
@@ -72,6 +73,7 @@ export default {
         /* 顶部淡入淡出 */
         handleScroll() {
             const top = document.documentElement.scrollTop;
+            // console.log(top)
             if (top > 0) {
                 let opacity = top / 140;
                 opacity = opacity > 1 ? 1 : opacity;
@@ -80,7 +82,10 @@ export default {
             } else {
                 this.isShow = true;
             }
-
+        },
+        /* 跳转设置页 */
+        jumpSet() {
+            this.$router.push({ path: "./personal-setting/index" })
         }
     },
     unmounted() {
