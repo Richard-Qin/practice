@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="head_fixed">
+    <div class="personal_center">
+        <div class="head_fixed" v-show="!isShow" :style="opacityStyle">
             <span>芝麻凛</span>
             <span>设置</span>
         </div>
@@ -37,6 +37,8 @@
             <icon-library></icon-library>
             <icon-library></icon-library>
             <icon-library></icon-library>
+            <icon-library></icon-library>
+            <icon-library></icon-library>
         </div>
         <div class="about_content"></div>
     </div>
@@ -51,15 +53,38 @@ export default {
     name: 'personalCenter',
     data() {
         return {
+            isShow: false,
+            opacityStyle: {
+                opacity: 0
+            }
+        }
+    },
+    // created() { },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll)
+    },
+
+    /*     
+        mounted() { },
+        beforeDestroy() { },
+        destroy() { }, */
+    methods: {
+        /* 顶部淡入淡出 */
+        handleScroll() {
+            const top = document.documentElement.scrollTop;
+            if (top > 0) {
+                let opacity = top / 140;
+                opacity = opacity > 1 ? 1 : opacity;
+                this.opacityStyle = { opacity };
+                this.isShow = false;
+            } else {
+                this.isShow = true;
+            }
 
         }
     },
-    created() { },
-    mounted() { },
-    beforeDestroy() { },
-    destroy() { },
-    methods: {
-
-    }
+    unmounted() {
+        window.removeEventListener('scroll', this.handleScroll)
+    },
 }
 </script>
