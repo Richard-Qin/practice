@@ -32,6 +32,8 @@
                     <use xlink:href="#icon-shezhi"></use>
                 </svg>
             </div>
+        </div>
+        <div class="personal_center_content">
             <!-- 图标组件 -->
             <icon-library></icon-library>
             <icon-library></icon-library>
@@ -40,7 +42,7 @@
             <icon-library></icon-library>
             <icon-library></icon-library>
         </div>
-        <div class="about_content"></div>
+        <div class="placeholder_box"></div>
     </div>
 </template>
 
