@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="message">
         <div>
             消息
         </div>

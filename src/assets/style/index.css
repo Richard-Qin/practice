@@ -53,6 +53,32 @@
   color: plum;
   opacity: 0.6;
 }
+.placeholder_box {
+  height: 90px;
+  width: 100px;
+}
+.personal_setting .setting_head {
+  margin: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #eee solid;
+}
+.personal_setting .setting_head .pet_name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.personal_setting .setting_head .pet_name img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.personal_setting .setting_head .pet_name div {
+  margin: 10px 0;
+}
 /* icon公共样式 */
 .icon {
   width: 1em;
