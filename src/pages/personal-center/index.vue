@@ -85,7 +85,7 @@ export default {
         },
         /* 跳转设置页 */
         jumpSet() {
-            this.$router.push({ path: "./personal-setting/index" })
+            this.$router.push({ path: "./personal-setting" })
         }
     },
     unmounted() {
