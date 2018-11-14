@@ -2,32 +2,32 @@
     <div id="app">
         <router-view />
         <tabbar>
-            <tabbar-item>
-                <svg class="icon" aria-hidden="true" slot="icon">
+            <tabbar-item link="/home-page">
+                <svg class="icon" aria-hidden="true" slot="icon" icon-active>
                     <use xlink:href="#icon-zhuye"></use>
                 </svg>
                 <span slot="label">主页</span>
             </tabbar-item>
-            <tabbar-item>
-                <svg class="icon" slot="icon" aria-hidden="true">
-                    <use xlink:href="#icon-zhuye"></use>
-                </svg>
-                <span slot="label">主页</span>
-            </tabbar-item>
-            <tabbar-item>
-                <svg class="icon" aria-hidden="true" slot="icon">
+            <tabbar-item link="/bookrack">
+                <svg class="icon" aria-hidden="true" slot="icon" icon-active>
                     <use xlink:href="#icon-shouhu"></use>
+                </svg>
+                <span slot="label">书架</span>
+            </tabbar-item>
+            <tabbar-item link="/message">
+                <svg class="icon" aria-hidden="true" slot="icon" icon-active>
+                    <use xlink:href="#icon-xinxi"></use>
                 </svg>
                 <span slot="label">消息</span>
             </tabbar-item>
-            <tabbar-item link="/component/demo">
-                <svg class="icon" aria-hidden="true" slot="icon">
+            <tabbar-item link="/community">
+                <svg class="icon" aria-hidden="true" slot="icon" icon-active>
                     <use xlink:href="#icon-shequ"></use>
                 </svg>
-                <span slot="label">Explore</span>
+                <span slot="label">社区</span>
             </tabbar-item>
             <tabbar-item link="/personal-center">
-                <svg class="icon" aria-hidden="true" slot="icon">
+                <svg class="icon" aria-hidden="true" slot="icon" icon-active>
                     <use xlink:href="#icon-wode"></use>
                 </svg>
                 <span slot="label">我</span>
@@ -65,7 +65,6 @@ export default {
         .icon {
             font-size: 60px;
         }
-        @tabbar-text-active-color: red;
     }
 }
 </style>
