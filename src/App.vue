@@ -8,11 +8,11 @@
                 </svg>
                 <span slot="label">主页</span>
             </tabbar-item>
-            <tabbar-item link="/bookrack">
+            <tabbar-item link="/the-tao">
                 <svg class="icon" aria-hidden="true" slot="icon" icon-active>
                     <use xlink:href="#icon-shouhu"></use>
                 </svg>
-                <span slot="label">书架</span>
+                <span slot="label">微淘</span>
             </tabbar-item>
             <tabbar-item link="/message">
                 <svg class="icon" aria-hidden="true" slot="icon" icon-active>

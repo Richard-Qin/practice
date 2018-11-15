@@ -4,9 +4,9 @@ export default [{
     component: () => import('@/pages/home-page/index') /* 主页 */
   },
   {
-    path: '/bookrack',
-    name: 'bookrack',
-    component: () => import('@/pages/bookrack/index') /* 书架 */
+    path: '/the-tao',
+    name: 'theTao',
+    component: () => import('@/pages/the-tao/index') /* 微淘 */
   },
   {
     path: '/message',

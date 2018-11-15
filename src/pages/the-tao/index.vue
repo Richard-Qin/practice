@@ -1,11 +1,11 @@
 <template>
     <div>
-        书架
+        微淘
     </div>
 </template>
 <script>
 export default {
-    name: 'bookrack',
+    name: 'theTao',
     data() {
         return {
 
