@@ -36,22 +36,23 @@
         <div class="personal_center_content">
             <!-- 图标组件 -->
             <icon-library></icon-library>
-            <icon-library></icon-library>
-            <icon-library></icon-library>
-            <icon-library></icon-library>
-            <icon-library></icon-library>
-            <icon-library></icon-library>
         </div>
         <div class="placeholder_box"></div>
+        <div>
+            <tabbar-box></tabbar-box>
+        </div>
     </div>
 </template>
 
 <script>
+// import { Tabbar, TabbarItem } from 'vux'
 import iconLibrary from '@/components/icon-library'
+import tabbarBox from '@/components/tabbar-box'
 // import func from './vue-temp/vue-editor-bridge';
 export default {
     components: {
-        iconLibrary
+        iconLibrary,
+        tabbarBox
     },
     name: 'personalCenter',
     data() {
@@ -68,7 +69,6 @@ export default {
     },
 
     /*     
-        mounted() { },
         beforeDestroy() { },
         destroy() { }, */
     methods: {
@@ -95,3 +95,6 @@ export default {
     },
 }
 </script>
+<style lang="less" scoped>
+</style>
+
