@@ -1,4 +1,8 @@
 export default [{
+    path: '/',
+    name: 'home_page',
+    component: () => import('@/pages/home-page/index')
+  }, {
     path: '/home-page',
     name: 'home_page',
     component: () => import('@/pages/home-page/index') /* 主页 */

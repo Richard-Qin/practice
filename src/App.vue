@@ -1,11 +1,16 @@
 <template>
     <div id="app">
         <router-view />
+        <tabbar-box></tabbar-box>
     </div>
 </template>
 
 <script>
+import tabbarBox from '@/components/tabbar-box'
 export default {
+    components: {
+        tabbarBox
+    },
     name: 'App'
 }
 </script>

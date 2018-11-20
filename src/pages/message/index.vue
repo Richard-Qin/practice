@@ -1,13 +1,16 @@
 <template>
-    <div class="message">
-        <div>
-            消息
-        </div>
+    <div>
+        消息
+        <icon-library></icon-library>
     </div>
 </template>
 <script>
+import iconLibrary from '@/components/icon-library'
 export default {
-    name: 'message',
+    components: {
+        iconLibrary
+    },
+    name: 'community',
     data() {
         return {
 

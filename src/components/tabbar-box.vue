@@ -52,19 +52,17 @@ export default {
     }
 }
 </script>
-<style lang="less" scoped>
+<style lang="less" >
 .tabBar {
     .weui-tabbar {
-        // position: fixed;
-        // bottom: 0px;
-        // background: #fff;
+        position: fixed;
+        bottom: 0px;
+        background: #fff;
         .weui-tabbar__icon {
             width: 100% !important;
-            // font-size: 60px;
         }
         .icon {
             font-size: 60px;
-            // width: 100%;
         }
     }
 }

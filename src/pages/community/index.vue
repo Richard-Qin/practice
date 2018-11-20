@@ -2,6 +2,7 @@
     <div>
         社区
         <icon-library></icon-library>
+
     </div>
 </template>
 <script>
@@ -18,4 +19,7 @@ export default {
     }
 }
 </script>
+<style lang="less" scoped>
+</style>
+
 
