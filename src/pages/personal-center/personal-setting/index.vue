@@ -24,6 +24,18 @@
     <group>
       <x-switch :title="$t('Toggle')" v-model="show"></x-switch>
     </group>
+    <div v-transfer-dom>
+      <confirm
+        v-model="show"
+        :title="$t('Confirm deleting the item')"
+        @on-cancel="onCancel"
+        @on-confirm="onConfirm"
+        @on-show="onShow"
+        @on-hide="onHide"
+      >
+        <p style="text-align:center;">{{ $t('Are you sure?') }}</p>
+      </confirm>
+    </div>
   </div>
 </template>
 <script>
@@ -32,11 +44,13 @@ import {
   Picker,
   XAddress,
   ChinaAddressV4Data,
+  Confirm,
   Value2nameFilter as value2name
 } from "vux";
 
 export default {
   components: {
+    Confirm,
     Picker,
     XAddress,
     Group
@@ -44,14 +58,25 @@ export default {
   name: "personalSetting",
   data() {
     return {
+      show: false,
       title: "地址",
       value: [],
       showAddress: false,
       addressData: ChinaAddressV4Data
     };
   },
-  mounted() { },
-  methods: {}
+  mounted() {},
+  methods: {
+    onCancel() {
+      console.log("on cancel");
+    },
+    onConfirm(msg) {
+      console.log("on confirm");
+      if (msg) {
+        alert(msg);
+      }
+    }
+  }
 };
 </script>
 

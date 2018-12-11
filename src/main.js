@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import animated from 'animate.css'
 import './assets/style/index.less'
+import store from './store.js'
 
 Vue.config.productionTip = false
 
@@ -14,6 +15,7 @@ Vue.use(animated)
 new Vue({
   el: '#app',
   router,
+  store,
   components: {
     App
   },
