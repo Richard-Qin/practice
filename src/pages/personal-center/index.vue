@@ -85,6 +85,7 @@ export default {
                 this.isShow = false;
             } else {
                 this.isShow = true;
+                
             }
         },
         /* 跳转设置页 */
