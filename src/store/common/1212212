@@ -1,0 +1,72 @@
+{
+    "editor.fontSize": 16, //以像素为单位控制字号
+    "editor.fontFamily": "monospace", //控制字体系列
+    "git.enableSmartCommit": true, //在没有暂存的更改时提交所有更改
+    "explorer.confirmDelete": false, //控制资源管理器是否应在删除文件到废纸篓时进行确认
+    "editor.wordWrap": "on", //控制折行方式  off-禁用折行  on-根据视区宽度折行
+    "editor.formatOnType": true, //控制编辑器是否应在键入后自动设置行的格式
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    "vetur.format.defaultFormatter.css": "prettier",
+    "vetur.format.defaultFormatter.postcss": "prettier",
+    "vetur.format.defaultFormatter.scss": "prettier",
+    "vetur.format.defaultFormatter.less": "prettier",
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "vetur.format.options.tabSize": 2,
+    "vetur.format.options.useTabs": true,
+    "vetur.format.defaultFormatterOptions": {
+        "prettyhtml": {
+            "printWidth": 120,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": true
+        },
+        "prettier": {
+            "semi": false,
+            "singleQuote": true
+        }
+    },
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html",
+        "wxml": "html"
+    },
+    "eslint.validate": ["javascript", "javascriptreact", "html", "vue", "wxml"],
+    "eslint.options": {
+        "plugins": ["html"]
+    },
+    "workbench.colorTheme": "Visual Studio Dark", //指定工作台中使用的颜色主题
+    "workbench.startupEditor": "welcomePage", //打开新页面  welcomePage-打开默认页面  none-不打开
+    "explorer.confirmDragAndDrop": false, //控制在资源管理器内拖放移动文件或文件夹时是否进行确认
+    "window.zoomLevel": 0, //调整窗口的缩放级别。原始大小是 0
+    "editor.formatOnSave": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "team.showWelcomeMessage": false,
+    "extensions.autoUpdate": true,
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "prettier.tabWidth": 4, //保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器
+    "prettier.semi": false, // 不要分号"
+    "prettier.singleQuote": true,
+    "liveServer.settings.donotShowInfoMsg": true, // 单引号
+    "wxmlConfig.onSaveFormat": true,
+    "workbench.iconTheme": "vscode-icons"
+}
