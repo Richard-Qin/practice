@@ -1,6 +1,7 @@
 <template>
 	<div class="content">社区
 		<!-- <icon-library></icon-library> -->
+		<div @click="asd">adfadf</div>
 	</div>
 </template>
 <script>
@@ -13,6 +14,14 @@ export default {
 	name: 'community',
 	data() {
 		return {}
+	},
+	methods: {
+		asd() {
+			let a = ['A', 'B', 'C']
+			a.forEach((element, index, array) => {
+				console.log(element)
+			})
+		}
 	}
 }
 </script>
