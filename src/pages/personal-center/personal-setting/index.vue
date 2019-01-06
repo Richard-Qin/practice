@@ -45,17 +45,7 @@ export default {
 		}
 	},
 	mounted() {},
-	methods: {
-		onCancel() {
-			console.log('on cancel')
-		},
-		onConfirm(msg) {
-			console.log('on confirm')
-			if (msg) {
-				alert(msg)
-			}
-		}
-	}
+	methods: {}
 }
 </script>
 
