@@ -56,10 +56,10 @@ export default {
 		return {}
 	},
 	props: {
-		iconName: {
-			type: Array,
-			required: true
-		}
+		// iconName: {
+		// 	type: Array,
+		// 	required: true
+		// }
 	}
 }
 </script>

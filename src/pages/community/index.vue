@@ -1,7 +1,9 @@
 <template>
 	<div class="content">社区
 		<!-- <icon-library></icon-library> -->
-		<div @click="asd">adfadf</div>
+		<!-- <div class="inputBox">
+			<input placeholder="请输入" type="text">
+		</div>-->
 	</div>
 </template>
 <script>
@@ -15,14 +17,7 @@ export default {
 	data() {
 		return {}
 	},
-	methods: {
-		asd() {
-			let a = ['A', 'B', 'C']
-			a.forEach((element, index, array) => {
-				console.log(element)
-			})
-		}
-	}
+	methods: {}
 }
 </script>
 <style lang="less" scoped>
@@ -30,5 +25,4 @@ export default {
 	margin-top: 600px;
 }
 </style>
-
 
