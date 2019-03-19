@@ -1,6 +1,6 @@
 <template>
     <div>
-        主页
+        主页adsfadf
         <icon-library></icon-library>
     </div>
 </template>
