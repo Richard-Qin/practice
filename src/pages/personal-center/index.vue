@@ -25,7 +25,7 @@
                     </div>
                     <div class="tabbar_flex">
                         <span>卷</span>
-                        <span>0</span>
+                        <span>9999</span>
                     </div>
                 </div>
                 <svg class="icon head_setting" aria-hidden="true" @click="jumpSet()">
