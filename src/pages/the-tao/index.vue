@@ -1,6 +1,6 @@
 <template>
     <div>
-        微淘12312312
+        微淘
         <icon-library></icon-library>
         <div>拉克丝空间大发啦见识到了</div>
 
